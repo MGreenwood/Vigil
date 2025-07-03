@@ -1,0 +1,69 @@
+# Go
+/bin/
+/build/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+*.log
+*.coverprofile
+*.testprofile
+*.prof
+*.tmp
+*.swp
+*.DS_Store
+
+# Go modules
+/go.sum
+/go.mod
+
+# Dependency directories (vendor/)
+vendor/
+
+# Node
+node_modules/
+.npm/
+
+# Next.js
+.next/
+out/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env files
+.env
+.env.*
+
+# Docker
+*.pid
+docker-compose.override.yml
+
+# VSCode
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Misc
+*.swp
+*.swo
+.idea/
+*.iml
+
+# Coverage
+coverage/
+coverage-final.json
+lcov.info
+
+# Build output
+frontend/.next/
+frontend/out/
+backend/bin/
+backend/build/ 

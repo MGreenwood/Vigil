@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-neutral text-gray-900;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary-light transition-colors duration-200 font-medium;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-primary border border-primary px-4 py-2 rounded-lg hover:bg-neutral transition-colors duration-200 font-medium;
+  }
+  
+  .btn-danger {
+    @apply bg-error text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors duration-200 font-medium;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-neutral-dark p-6;
+  }
+  
+  .status-up {
+    @apply text-success;
+  }
+  
+  .status-down {
+    @apply text-error;
+  }
+  
+  .status-warning {
+    @apply text-warning;
+  }
+} 
