@@ -68,7 +68,3 @@ This project is licensed under the Business Source License 1.1 (BSL) - see the [
 ### Licensing Questions
 
 For commercial licensing or questions, contact us at support@vigil.rest
-
----
-
-**Vigil** - Because your customers deserve reliable service, even at 3 AM. 
