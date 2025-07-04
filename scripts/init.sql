@@ -102,4 +102,17 @@ FROM organizations o
 LEFT JOIN monitors m ON m.organization_id = o.id
 LEFT JOIN monitor_stats ms ON ms.id = m.id
 LEFT JOIN alerts a ON a.monitor_id = m.id
-GROUP BY o.id, o.name, o.created_at; 
+GROUP BY o.id, o.name, o.created_at;
+
+-- Create interest_subscribers table for email signups
+CREATE TABLE IF NOT EXISTS interest_subscribers (
+    id SERIAL PRIMARY KEY,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
+);
+
+-- Create index on email for faster lookups
+CREATE INDEX IF NOT EXISTS idx_interest_subscribers_email ON interest_subscribers(email);
+CREATE INDEX IF NOT EXISTS idx_interest_subscribers_created_at ON interest_subscribers(created_at); 

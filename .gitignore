@@ -39,10 +39,16 @@ yarn-error.log*
 # Env files
 .env
 .env.*
+.env.local
+.env.development
+.env.production
+.env.test
 
 # Docker
 *.pid
 docker-compose.override.yml
+docker-compose.prod.yml
+docker-compose.dev.yml
 
 # VSCode
 .vscode/
@@ -57,6 +63,18 @@ Thumbs.db
 .idea/
 *.iml
 
+# Secrets and sensitive files
+secrets/
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+tunnel-token.txt
+cloudflare-token.txt
+email-credentials.json
+ssl-certificates/
+
 # Coverage
 coverage/
 coverage-final.json
@@ -66,4 +84,22 @@ lcov.info
 frontend/.next/
 frontend/out/
 backend/bin/
-backend/build/ 
+backend/build/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+postgres-data/
+redis-data/
+
+# Logs and monitoring
+logs/
+*.log
+monitoring-data/
+check-results/
+
+# Temporary files
+tmp/
+temp/
+.cache/ 

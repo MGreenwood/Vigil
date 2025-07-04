@@ -1,0 +1,42 @@
+Business Source License 1.1
+
+Copyright (c) 2024 Vigil
+
+Licensor: Vigil
+Licensed Work: Vigil Monitoring Platform
+Additional Use Grant: None
+
+Change Date: 2027-12-31
+Change License: Apache License, Version 2.0
+
+For information about alternative licensing arrangements for the Software, please visit: https://vigil.rest/licensing
+
+Terms of the Business Source License (this document)
+
+1. License Grant. Licensor hereby grants to each recipient of the Software (each, a "Recipient") a non-exclusive, non-transferable, non-sublicensable, and royalty-free right to use the Software in object code form, solely for its internal business purposes, to the extent permitted under the License as set forth in this Agreement.
+
+2. Change Date. The Change Date is December 31, 2027.
+
+3. Change License. The Change License is the Apache License, Version 2.0.
+
+4. Notice. The Business Source License requires that the following notice be included in all copies or substantial portions of the Software:
+
+   Copyright (c) 2024 Vigil
+   Licensed under the Business Source License 1.1 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at https://mariadb.com/bsl11/
+
+   Software distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+5. Additional Use Grant. You may use the Software for the number of users specified above in the applicable pricing tier on https://vigil.rest/pricing. For use by additional users, please contact us at support@vigil.rest.
+
+6. Commercial Use. You may not use the Software for commercial purposes (including providing commercial hosting or support services) without a separate commercial license from Licensor.
+
+7. Attribution. You must include attribution to "Vigil" in any public use, distribution, or derivative work of the Software.
+
+8. No Warranty. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+9. Contact Information. For licensing questions, contact support@vigil.rest 

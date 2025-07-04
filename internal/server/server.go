@@ -125,6 +125,16 @@ func (s *Server) setupRoutes() {
 	// Webhook receiver (public endpoint)
 	s.app.Post("/webhook/:id", handlers.ReceiveWebhook(s.db))
 
+	// Interest list routes (public)
+	interest := s.app.Group("/api/interest")
+	interest.Post("/signup", handlers.InterestSignup(s.db))
+	interest.Get("/unsubscribe", handlers.Unsubscribe(s.db))
+
+	// Admin routes for interest list (should be protected in production)
+	admin := api.Group("/admin")
+	admin.Get("/interest-list", handlers.GetInterestList(s.db))
+	admin.Post("/interest-list/launch-notification", handlers.SendLaunchNotification(s.db))
+
 	// Dashboard stats
 	dashboard := protected.Group("/dashboard")
 	dashboard.Get("/stats", handlers.GetDashboardStats(s.db))

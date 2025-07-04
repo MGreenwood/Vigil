@@ -12,6 +12,11 @@ services:
       - REDIS_URL=redis://redis:6379
       - JWT_SECRET=your-super-secret-jwt-key-change-this
       - ENVIRONMENT=production
+      - SMTP_HOST=mailhog
+      - SMTP_PORT=1025
+      - SMTP_USERNAME=
+      - SMTP_PASSWORD=
+      - SMTP_FROM=support@vigil.rest
     depends_on:
       - db
       - redis
@@ -30,6 +35,7 @@ services:
     environment:
       - NEXT_PUBLIC_API_URL=http://localhost:8080
       - NEXT_PUBLIC_APP_URL=http://localhost:3000
+      - BACKEND_URL=http://backend:8080
     depends_on:
       - backend
     restart: unless-stopped
@@ -62,6 +68,17 @@ services:
       - redis_data:/data
     ports:
       - "6379:6379"
+    restart: unless-stopped
+    networks:
+      - vigil-network
+
+  # Email Server (SMTP Relay)
+  mailhog:
+    image: mailhog/mailhog:latest
+    container_name: vigil-mailhog
+    ports:
+      - "1025:1025"  # SMTP port
+      - "8025:8025"  # Web UI port
     restart: unless-stopped
     networks:
       - vigil-network

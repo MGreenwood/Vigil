@@ -53,9 +53,27 @@ See our [Design Document](./DESIGN_DOCUMENT.md#implementation-roadmap) for detai
 
 Vigil is currently in early development. We'll open up for contributions once the MVP is complete.
 
+**Note**: Vigil uses the Business Source License (BSL) which allows internal use and modifications but restricts commercial redistribution until 2027. See [LICENSE](LICENSE) for details.
+
 ## 📄 License
 
-*License details coming soon*
+This project is licensed under the Business Source License 1.1 (BSL) - see the [LICENSE](LICENSE) file for details.
+
+### License Details
+
+- **Current License**: Business Source License 1.1 (until December 31, 2027)
+- **Future License**: Apache License, Version 2.0 (after December 31, 2027)
+- **Commercial Use**: Requires separate commercial license until 2027
+- **Internal Use**: Free for internal business purposes
+
+### Legal Documents
+
+- [Terms of Service](TERMS.md) - How you can use the Vigil SaaS platform
+- [Privacy Policy](PRIVACY.md) - How we handle your data
+
+### Licensing Questions
+
+For commercial licensing or questions, contact us at support@vigil.rest
 
 ---
 
