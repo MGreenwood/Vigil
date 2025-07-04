@@ -31,12 +31,6 @@ Vigil is a developer-focused monitoring platform that alerts you to downtime, we
 - **Styling**: Tailwind CSS
 - **Deployment**: Vercel + Railway/Render
 
-## 🎨 Brand Colors
-
-- **Primary**: Deep Navy `#0C1B33`
-- **Accent**: Amber `#FFB300`
-- **Neutral**: Soft Gray `#F4F5F7`
-
 ## 📈 Roadmap
 
 See our [Design Document](./DESIGN_DOCUMENT.md#implementation-roadmap) for detailed development phases.
