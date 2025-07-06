@@ -2,7 +2,7 @@
 
 > Keep watch over your SaaS infrastructure
 
-Vigil is a developer-focused monitoring platform that alerts you to downtime, webhook failures, and SSL expirations so you can serve your customers better, even while you sleep.
+Vigil is a developer-focused monitoring platform that alerts you to downtime, webhook failures, and upcoming SSL expirations so you can serve your customers better, even while you sleep.
 
 ## 🎯 What Vigil Does
 
